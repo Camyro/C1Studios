@@ -1,0 +1,154 @@
+/*Primeiras configuraçaoes*/
+html{
+    color: white;
+    background: #470E0E;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    height: auto;
+    width: 100%;
+    height: 100%;
+}
+
+/*Navegaçao*/
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
+nav ul li img{
+    width: 90px;
+    height: 23px;
+}
+
+nav ul li p{
+    color: rgb(235, 0, 0);
+}
+
+a, span{
+    color: white;
+    text-decoration: none;
+}
+
+/*Apps*/
+.tela1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.tela1 h2{
+    padding: 15px;
+}
+
+.tela1 ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+    overflow-x: auto;
+    flex-wrap:wrap;
+}
+
+.tela1 ul li{
+    padding: 10px;
+}
+
+.tela1 ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tela1 ul li img{
+    width: 125px;
+    width: 125px;
+    border-radius: 10%;
+}
+
+/*Infor*/
+.tela2 {
+    padding: 10px;
+}
+
+.Infor{
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.Infor img{
+    width: 125px;
+    height: 125px;
+    border-radius: 10%;
+}
+
+.Infor h2, .Infor p{
+    padding: 0px 10px;
+}
+
+/*Rodape*/
+.rodape{
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+span{
+    padding: 2px;
+}
+
+.rodape a {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+a:hover, .rodape p:hover, span:hover, nav p:hover{
+    color: rgb(235, 0, 0);
+}
+
+.rodape p{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+@media screen and (max-width: 750px) {
+    .Infor{
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .tela1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+}
