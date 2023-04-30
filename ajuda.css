@@ -115,3 +115,27 @@ a:hover, .rodape p:hover, span:hover, nav p:hover{
     }
 
 }
+
+@media screen and (max-width: 575px) {
+    iframe {
+        width: 420px;
+        height: 236px;
+    }
+
+}
+
+@media screen and (max-width: 295px) {
+    iframe{
+        width: 280px;
+        height: 157px;
+    }
+
+}
+
+@media screen and (max-width: 155px) {
+    iframe{
+        width: 140px;
+        height: 78px;
+    }
+
+}
