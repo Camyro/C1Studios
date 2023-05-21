@@ -39,7 +39,6 @@ body::-webkit-scrollbar-thumb {
     list-style-type: none;
     justify-content: space-around;
     align-items: center;
-    padding: 0px 15px;
     background-image: linear-gradient(#a000a9, #88888800);
 }
 
@@ -283,6 +282,8 @@ a:hover, .rodape p:hover, span:hover, nav p:hover{
         height: auto;
         width: 100%;
         flex-direction: column;
+        padding: 0px;
+        margin: 0px;
     }
     
     .if{
@@ -291,6 +292,8 @@ a:hover, .rodape p:hover, span:hover, nav p:hover{
         height: auto;
         width: 100%;
         justify-content: center;
+        padding: 0px;
+        margin: 0px;
     }
 
 }
