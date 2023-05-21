@@ -268,7 +268,7 @@ a:hover, .rodape p:hover, span:hover, nav p:hover{
         align-items: center;
         flex-direction: column;
         width: 100%;
-        height: auto;
+        height: 100%;
         justify-content: center;
     }
 
