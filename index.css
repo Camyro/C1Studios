@@ -217,7 +217,7 @@ span{
 }
 
 /*Hovers*/
-a:hover, .rodape p:hover, span:hover, nav p:hover{
+a:hover, .rodape p:hover, span:hover, .nav p:hover{
     color: rgb(219, 39, 255);
 }
 
