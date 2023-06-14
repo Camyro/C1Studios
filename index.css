@@ -29,50 +29,6 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid rgb(61, 14, 71);
 }
 
-/*Navegaçao*/
-.nav{
-    position:fixed;
-    width: 100%;
-    height: 10%;
-    display: flex;
-    list-style-type: none;
-    justify-content: space-around;
-    align-items: center;
-    background-image: linear-gradient(#a000a9, #88888800);
-}
-
-.nav ul{
-    display: flex;
-    list-style-type: none;
-    padding: 0px 25px;
-    width: 100%;
-    justify-content: flex-end;
-}
-
-.nav li{
-    padding: 0px 10px;
-}
-
-.nav img{
-    width: 90px;
-    height: 23px;
-}
-
-.nav ul li p{
-    color: #ffffff;
-}
-
-a, span{
-    color: rgb(255, 255, 255);
-    text-decoration: none;  
-}
-
-a{
-    display: flex;
-    align-items: center;
-    align-self: center;  
-}
-
 /*Apps*/
 .tela1{
     display: flex;
@@ -214,6 +170,50 @@ span{
     padding: 0;
     margin: 0;
     display: flex;
+}
+
+/*Navegaçao*/
+.nav{
+    position:fixed;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(#a000a9, #88888800);
+}
+
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0px 25px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.nav li{
+    padding: 0px 10px;
+}
+
+.nav img{
+    width: 90px;
+    height: 23px;
+}
+
+.nav ul li p{
+    color: #ffffff;
+}
+
+a, span{
+    color: rgb(255, 255, 255);
+    text-decoration: none;  
+}
+
+a{
+    display: flex;
+    align-items: center;
+    align-self: center;  
 }
 
 /*Hovers*/
