@@ -23,7 +23,7 @@
 
 <body>
   
-  <h1>Calculadora de Ladrinhos</h1>
+  <h1>Calculadora</h1>
 
   <!--Inicio-->
   <h3>Inicio</h3>
@@ -115,6 +115,9 @@
       this.value = this.value.replace(/\D/g, ""); // remove tudo que não for número
     });
     document.getElementById("lombada").addEventListener("input", function() {
+      this.value = this.value.replace(/\D/g, ""); // remove tudo que não for número
+    });
+    document.getElementById("tentativas").addEventListener("input", function() {
       this.value = this.value.replace(/\D/g, ""); // remove tudo que não for número
     });
     
