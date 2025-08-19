@@ -92,7 +92,7 @@ setInterval(function() {
 
 
   //Calcular
-  var total = inicio + (nLadrilhoDePrimeira * 5) + (nladrilhoDeSegunda * 3) + nladrilhoDeTerceira + (nBecoESaida * 10) + (nGangorra * 20) + (nobstaculo * 20) + (ngap * 10) + (nrampa * 10) + (nlombada * 10) + (final === 60 ? final - (5 * ntentativas) : 0);
+  var total = inicio + (nLadrilhoDePrimeira * 5) + (nladrilhoDeSegunda * 3) + nladrilhoDeTerceira + (nBecoESaida * 10) + (nGangorra * 20) + (nobstaculo * 20) + (ngap * 10) + (nrampa * 10) + (nlombada * 10) + (final === 60 ? final - ( ntentativas >= 12 ? 60 : 5 * ntentativas) : 0);
   total = total * GG;
   total = total * GG2;
   total = total * GR;
