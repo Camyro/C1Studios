@@ -23,14 +23,21 @@
 
 <body>
 
-  <h1>Calculadora</h1>
+  <div class="calc-header">
+    <h1>TechMinds - Calculadora</h1>
+    <a href="../index.html" class="back-link">← Voltar</a>
+  </div>
 
-  <!--Inicio-->
-  <h3>Inicio</h3>
+  <div class="calc-container">
+    <!--Inicio-->
+    <div class="section-content">
+      <h3>Inicio</h3>
   <input type="checkbox" id="inicio" class="checkbox"> Saiu do ladrilho inicial de primeira?
+    </div>
 
-  <!--Ladrilhos-->
-  <h3>Ladrilhos</h3>
+    <!--Ladrilhos-->
+    <div class="section-content">
+      <h3>Ladrilhos</h3>
   <p>Primeira Tentativa (5)</p>
   <input type="number" id="ladrilhoDe1" class="caixaDeTexto">
 
@@ -39,9 +46,11 @@
 
   <p>Terceira Tentativa (1)</p>
   <input type="number" id="ladrilhoDe3" class="caixaDeTexto">
+    </div>
 
-  <!--Perigos-->
-  <h3>Perigos</h3>
+    <!--Perigos-->
+    <div class="section-content">
+      <h3>Perigos</h3>
   <p>Superar Interseção ou Beco sem Saída (10)</p>
   <input type="number" id="BecoESaida" class="caixaDeTexto">
 
@@ -59,9 +68,11 @@
 
   <p>Superar um Ladrilho Contendo Lombada(s) (10)</p>
   <input type="number" id="lombada" class="caixaDeTexto">
+    </div>
 
-  <!--Resgate-->
-  <h3>Resgate</h3>
+    <!--Resgate-->
+    <div class="section-content">
+      <h3>Resgate</h3>
   <p>Área Verde</p>
   <input type="checkbox" id="GG" class="checkbox"> Vitima Viva (1.3) <br>
   <input type="checkbox" id="GG2" class="checkbox"> Vitima Viva (1.3) <br>
@@ -71,25 +82,33 @@
   <input type="checkbox" id="RG" class="checkbox"> Vitima Viva (1.1) <br>
   <input type="checkbox" id="RG2" class="checkbox"> Vitima Viva (1.1) <br>
   <input type="checkbox" id="RR" class="checkbox"> Vitima Morta (1.3) <br>
+    </div>
 
-  <!--Desafio Surpresa-->
-  <h3>Desafio Surpresa</h3>
+    <!--Desafio Surpresa-->
+    <div class="section-content">
+      <h3>Desafio Surpresa</h3>
   <input type="checkbox" id="desafio" class="checkbox"> Desafio completo? (1.5)
+    </div>
 
-  <!--Final-->
-  <h3>Final</h3>
+    <!--Final-->
+    <div class="section-content">
+      <h3>Final</h3>
   <input type="checkbox" id="final" class="checkbox"> Ficou parado por 5 segundos na linha vermelha? (60)
 
   <p>Quantas tentativas teve no último checkpoint? (60 - 5X)</p>
   <input type="number" id="tentativas" class="caixaDeTexto">
+    </div>
 
-  <!--Resultado-->
-  <h3>Resultado</h3>
-  <p id="resultado">0</p>
+    <!--Resultado-->
+    <div class="section-content">
+      <h3>Resultado</h3>
+      <p id="resultado">0</p>
 
-  <button type="button" class="clear" onclick="logout()">
-      Sair
-  </button>
+      <button type="button" class="clear" onclick="logout()">
+          Sair
+      </button>
+    </div>
+  </div>
 
   <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
