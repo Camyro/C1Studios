@@ -16,7 +16,7 @@ button[disabled] {
 .solid {
     background: white;
     border: none;
-    color: rgb(45, 211, 111);
+    color: #2c6d8d;;
 }
 .outline {
     background: transparent;
@@ -25,7 +25,7 @@ button[disabled] {
 }
 
 .error {
-    background: red;
+    background: #e74c3c;
     color: white;
     display: none;
 } 
