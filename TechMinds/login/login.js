@@ -1,6 +1,6 @@
 firebase.auth().onAuthStateChanged(user => {
     if (user) {
-        window.location.href = "calculadora/index.html";
+        window.location.href = "../calculadora/index.html";
     }
 })
 
@@ -20,7 +20,7 @@ function login() {
     firebase.auth().signInWithEmailAndPassword(
         form.email().value, form.password().value
     ).then(response => {
-        window.location.href = "calculadora/index.html";
+        window.location.href = "../calculadora/index.html";
     }).catch(error => {
         alert(getErrorMessage(error));
     });
@@ -82,4 +82,4 @@ const form = {
     password: () => document.getElementById("password"),
     passwordRequiredError: () => document.getElementById("password-required-error"),
     recoverPasswordButton: () => document.getElementById("recover-password-button"),
-} 
+}
