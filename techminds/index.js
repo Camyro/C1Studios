@@ -6,7 +6,10 @@ firebase.auth().onAuthStateChanged(user => {
         <a href="login"><button>Login</button></a>`;
     } else{
         element.innerHTML = `<h1>TechMinds</h1>
-        <button type="button" class="clear" onclick="logout()">Sair</button>`;
+        <div class="user-info">
+            <span class="user-email">${user.email}</span>
+            <button type="button" class="clear" onclick="logout()">Sair</button>
+        </div>`;
     }
 })
 
