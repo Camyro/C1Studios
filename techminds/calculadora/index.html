@@ -29,80 +29,136 @@
   </div>
 
   <div class="calc-container">
+    <h2 class="calc-title">Calculadora de Pontuação</h2>
+
     <!--Inicio-->
     <div class="section-content">
-      <h3>Inicio</h3>
-  <input type="checkbox" id="inicio" class="checkbox"> Saiu do ladrilho inicial de primeira?
+      <h3>🏁 Inicio</h3>
+      <div class="checkbox-group">
+        <input type="checkbox" id="inicio" class="checkbox">
+        <label for="inicio" class="checkbox-label">Saiu do ladrilho inicial de primeira?</label>
+      </div>
     </div>
 
     <!--Ladrilhos-->
     <div class="section-content">
-      <h3>Ladrilhos</h3>
-  <p>Primeira Tentativa (5)</p>
-  <input type="number" id="ladrilhoDe1" class="caixaDeTexto">
+      <h3>🔲 Ladrilhos</h3>
+      
+      <div class="form-group">
+        <label>Primeira Tentativa (5 pontos)</label>
+        <input type="number" id="ladrilhoDe1" class="caixaDeTexto" min="0" placeholder="0">
+      </div>
 
-  <p>Segunda Tentativa (3)</p>
-  <input type="number" id="ladrilhoDe2" class="caixaDeTexto">
+      <div class="form-group">
+        <label>Segunda Tentativa (3 pontos)</label>
+        <input type="number" id="ladrilhoDe2" class="caixaDeTexto" min="0" placeholder="0">
+      </div>
 
-  <p>Terceira Tentativa (1)</p>
-  <input type="number" id="ladrilhoDe3" class="caixaDeTexto">
+      <div class="form-group">
+        <label>Terceira Tentativa (1 ponto)</label>
+        <input type="number" id="ladrilhoDe3" class="caixaDeTexto" min="0" placeholder="0">
+      </div>
     </div>
 
     <!--Perigos-->
     <div class="section-content">
-      <h3>Perigos</h3>
-  <p>Superar Interseção ou Beco sem Saída (10)</p>
-  <input type="number" id="BecoESaida" class="caixaDeTexto">
+      <h3>⚠️ Perigos</h3>
+      
+      <div class="form-group">
+        <label>Superar Interseção ou Beco sem Saída (10 pontos)</label>
+        <input type="number" id="BecoESaida" class="caixaDeTexto" min="0" placeholder="0">
+      </div>
 
-  <p>Superar uma Gangorra (20)</p>
-  <input type="number" id="Gangorra" class="caixaDeTexto">
+      <div class="form-group">
+        <label>Superar uma Gangorra (20 pontos)</label>
+        <input type="number" id="Gangorra" class="caixaDeTexto" min="0" placeholder="0">
+      </div>
 
-  <p>Desviar de um Obstaculo (20)</p>
-  <input type="number" id="obstaculo" class="caixaDeTexto">
+      <div class="form-group">
+        <label>Desviar de um Obstáculo (20 pontos)</label>
+        <input type="number" id="obstaculo" class="caixaDeTexto" min="0" placeholder="0">
+      </div>
 
-  <p>Superar um Ladrilho Contendo Gap(s) (10)</p>
-  <input type="number" id="gap" class="caixaDeTexto">
+      <div class="form-group">
+        <label>Superar um Ladrilho Contendo Gap(s) (10 pontos)</label>
+        <input type="number" id="gap" class="caixaDeTexto" min="0" placeholder="0">
+      </div>
 
-  <p>Subir ou Descer Cada Ladrilho Contendo uma Rampa (10)</p>
-  <input type="number" id="rampa" class="caixaDeTexto">
+      <div class="form-group">
+        <label>Subir ou Descer Cada Ladrilho Contendo uma Rampa (10 pontos)</label>
+        <input type="number" id="rampa" class="caixaDeTexto" min="0" placeholder="0">
+      </div>
 
-  <p>Superar um Ladrilho Contendo Lombada(s) (10)</p>
-  <input type="number" id="lombada" class="caixaDeTexto">
+      <div class="form-group">
+        <label>Superar um Ladrilho Contendo Lombada(s) (10 pontos)</label>
+        <input type="number" id="lombada" class="caixaDeTexto" min="0" placeholder="0">
+      </div>
     </div>
 
     <!--Resgate-->
     <div class="section-content">
-      <h3>Resgate</h3>
-  <p>Área Verde</p>
-  <input type="checkbox" id="GG" class="checkbox"> Vitima Viva (1.3) <br>
-  <input type="checkbox" id="GG2" class="checkbox"> Vitima Viva (1.3) <br>
-  <input type="checkbox" id="GR" class="checkbox"> Vitima Morta (1.1) <br>
+      <h3>🚑 Resgate</h3>
+      
+      <div class="area-group area-verde">
+        <div class="area-title">Área Verde</div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="GG" class="checkbox">
+          <label for="GG" class="checkbox-label">Vítima Viva (1.3)</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="GG2" class="checkbox">
+          <label for="GG2" class="checkbox-label">Vítima Viva (1.3)</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="GR" class="checkbox">
+          <label for="GR" class="checkbox-label">Vítima Morta (1.1)</label>
+        </div>
+      </div>
 
-  <p>Área Vermelha</p>
-  <input type="checkbox" id="RG" class="checkbox"> Vitima Viva (1.1) <br>
-  <input type="checkbox" id="RG2" class="checkbox"> Vitima Viva (1.1) <br>
-  <input type="checkbox" id="RR" class="checkbox"> Vitima Morta (1.3) <br>
+      <div class="area-group area-vermelha">
+        <div class="area-title">Área Vermelha</div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="RG" class="checkbox">
+          <label for="RG" class="checkbox-label">Vítima Viva (1.1)</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="RG2" class="checkbox">
+          <label for="RG2" class="checkbox-label">Vítima Viva (1.1)</label>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="RR" class="checkbox">
+          <label for="RR" class="checkbox-label">Vítima Morta (1.3)</label>
+        </div>
+      </div>
     </div>
 
     <!--Desafio Surpresa-->
     <div class="section-content">
-      <h3>Desafio Surpresa</h3>
-  <input type="checkbox" id="desafio" class="checkbox"> Desafio completo? (1.5)
+      <h3>🎯 Desafio Surpresa</h3>
+      <div class="checkbox-group">
+        <input type="checkbox" id="desafio" class="checkbox">
+        <label for="desafio" class="checkbox-label">Desafio completo? (1.5)</label>
+      </div>
     </div>
 
     <!--Final-->
     <div class="section-content">
-      <h3>Final</h3>
-  <input type="checkbox" id="final" class="checkbox"> Ficou parado por 5 segundos na linha vermelha? (60)
+      <h3>🏆 Final</h3>
+      <div class="checkbox-group">
+        <input type="checkbox" id="final" class="checkbox">
+        <label for="final" class="checkbox-label">Ficou parado por 5 segundos na linha vermelha? (60 pontos)</label>
+      </div>
 
-  <p>Quantas tentativas teve no último checkpoint? (60 - 5X)</p>
-  <input type="number" id="tentativas" class="caixaDeTexto">
+      <div class="form-group">
+        <label>Quantas tentativas teve no último checkpoint? (60 - 5X)</label>
+        <input type="number" id="tentativas" class="caixaDeTexto" min="0" placeholder="0">
+      </div>
     </div>
 
     <!--Resultado-->
-    <div class="section-content">
-      <h3>Resultado</h3>
-      <p id="resultado">0</p>
+    <div class="section-content resultado-section">
+      <h3>📊 Resultado Final</h3>
+      <div id="resultado">0</div>
 
       <button type="button" class="clear" onclick="logout()">
           Sair
