@@ -1,3 +1,9 @@
+firebase.auth().onAuthStateChanged(user => {
+    if (user) {
+        window.location.href = "pages/home/home.html";
+    }
+})
+
 function onChangeEmail() {
     //Verifica o email
     toggleButtonsDisable();
@@ -14,7 +20,7 @@ function login() {
     firebase.auth().signInWithEmailAndPassword(
         form.email().value, form.password().value
     ).then(response => {
-        window.location.href = "pages/home/home.html";
+        window.location.href = "calculadora/index.html";
     }).catch(error => {
         alert(getErrorMessage(error));
     });
