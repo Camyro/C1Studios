@@ -41,7 +41,7 @@ function toggleEmailErrors() {
     //Verifica se o email está vazio
     const email = form.email().value;
     form.emailRequiredError().style.display = email ? "none" : "block";
-    
+
     form.emailInvalidError().style.display = validateEmail(email) ? "none" : "block";
 }
 
@@ -54,10 +54,12 @@ function togglePasswordErrors() {
 function toggleButtonsDisable() {
     //abilita ou desabilita o botão de login
     const emailValid = isEmailValid();
-    form.recoverPasswordButton().disabled = !emailValid;
-
     const passwordValid = isPasswordValid();
-    form.loginButton().disabled = !emailValid || !passwordValid;
+    const loginButton = form.loginButton();
+
+    if (loginButton) {
+        loginButton.disabled = !emailValid || !passwordValid;
+    }
 }
 
 function isEmailValid() {
