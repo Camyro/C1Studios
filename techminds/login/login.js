@@ -1,6 +1,6 @@
 firebase.auth().onAuthStateChanged(user => {
     if (user) {
-        window.location.href = "../calculadora/index.html";
+        window.location.href = "../";
     }
 })
 
@@ -20,7 +20,7 @@ function login() {
     firebase.auth().signInWithEmailAndPassword(
         form.email().value, form.password().value
     ).then(response => {
-        window.location.href = "../calculadora/index.html";
+        window.location.href = "../";
     }).catch(error => {
         alert(getErrorMessage(error));
     });
@@ -31,10 +31,6 @@ function getErrorMessage(error) {
         return "Usuário nao encontrado";
     }
     return error.message;
-}
-
-function register() {
-    window.location.href = "pages/register/register.html";
 }
 
 function toggleEmailErrors() {
